@@ -26,8 +26,6 @@ public class WebActivity extends AppCompatActivity {
     webView.setVerticalScrollBarEnabled(false);
     webView.setHorizontalScrollBarEnabled(false);
     webView.getSettings().setUseWideViewPort(false);
-    webView.addJavascriptInterface(new WebViewJsInterface(this, webView), "handler");
-    webView.setWebViewClient(new CustomWebViewClient());
-    webView.loadUrl("file:///android_asset/main.html");
+    webView.loadUrl("http://cdn.51talk.com/apollo/fe-student_hd/0.18/courseList.html");
   }
 }
